@@ -7,9 +7,9 @@ const initialState: State = {
 const themeReducer = (state = initialState, action: Action) => {
   switch (action.type) {
     case "LIGHT_MODE":
-      return { ...state, theme: state.theme === "light" }
+      return { ...state, theme: (state.theme = "light") }
     case "DARK_MODE":
-      return { ...state, theme: state.theme === "dark" }
+      return { ...state, theme: (state.theme = "dark") }
     case "TOGGLE_THEME":
       return { ...state, theme: state.theme === "light" ? "dark" : "light" }
     default:

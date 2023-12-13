@@ -5,9 +5,9 @@ export const toggleTheme = () => {
 }
 
 export const lightMode = () => ({
-  type: "LIGHT_MODE",
+  type: "DARK_MODE",
 })
 
 export const darkMode = () => ({
-  type: "DARK_MODE",
+  type: "LIGHT_MODE",
 })
