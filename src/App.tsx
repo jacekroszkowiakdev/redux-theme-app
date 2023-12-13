@@ -22,6 +22,7 @@ const App: React.FC = () => {
         height: "200px",
       }}
     >
+      <h1>THE APP WITH STATE MANAGMENT</h1>
       <button onClick={() => dispatch(darkMode())}>Dark Theme</button>
       <button onClick={() => dispatch(lightMode())}>Light Theme</button>
       <button onClick={() => dispatch(toggleTheme())}>Toggle Theme</button>
